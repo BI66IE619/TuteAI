@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TuteAI Chat</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Markdown Renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body class="chat-body">
+
+    <div class="sidebar">
+        <h2>Chats</h2>
+        <button class="primary-btn" id="newChatBtn">New Chat</button>
+        <ul id="chatList"></ul>
+
+        <h2>Settings</h2>
+        <button class="secondary-btn" id="settingsBtn">Change Grade Level</button>
+    </div>
+
+    <div class="chat-container">
+        <div id="chatWindow" class="chat-window"></div>
+
+        <div class="input-area">
+            <textarea id="messageInput" placeholder="Ask TuteAI anything you're trying to learn…" rows="2"></textarea>
+            <button id="sendBtn" class="primary-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Grade Selector Modal -->
+    <div id="gradeModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Select Your Grade Level</h2>
+            <select id="gradeSelect">
+                <option value="5">5th Grade</option>
+                <option value="6">6th Grade</option>
+                <option value="7">7th Grade</option>
+                <option value="8">8th Grade</option>
+                <option value="9">9th Grade</option>
+                <option value="10">10th Grade</option>
+                <option value="11">11th Grade</option>
+                <option value="12">12th Grade</option>
+            </select>
+            <button id="saveGradeBtn" class="primary-btn">Save</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="generate.js"></script>
+</body>
+</html>
