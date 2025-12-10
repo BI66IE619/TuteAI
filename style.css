@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #111;
+}
+
+/* Landing Page */
+.landing-body {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.landing-container {
+    max-width: 600px;
+    text-align: center;
+}
+
+.primary-btn {
+    background: #4a7dff;
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.primary-btn:hover {
+    background: #3b63d1;
+}
+
+.secondary-btn {
+    background: #eee;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-body {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-top: 20px;
+}
+
+#chatList {
+    list-style: none;
+    padding: 0;
+}
+
+#chatList li {
+    padding: 10px;
+    background: #f0f2f7;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* Chat Window */
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 20px;
+    max-width: 80%;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.user-msg {
+    background: #d6e2ff;
+    align-self: flex-end;
+}
+
+.ai-msg {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+/* Input Area */
+.input-area {
+    display: flex;
+    padding: 12px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    resize: none;
+}
+
+#sendBtn {
+    margin-left: 10px;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
